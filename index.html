@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlate - Healthy Integrator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">🥗 Nutri<span>Plate</span></div>
+        <p>Integrasi Microservices Resep & Kalori</p>
+    </header>
+    
+    <div id="loading" class="loader">Memproses data dari STB...</div>
+    
+    <main class="main-content">
+        <section class="recipe-section">
+            <h3><span class="icon"></span> Daftar Resep</h3>
+            <div id="recipe-list" class="scroll-area"></div>
+        </section>
+
+        <section id="result" class="analysis-section">
+            <div class="card-result">
+                <h2 id="res-title">Pilih Resep Dahulu</h2>
+                <p id="res-ingredients" class="sub-text">Analisis nutrisi sebagai berikut.</p>
+                
+                <div class="calorie-counter">
+                    <span class="label">Total Estimasi</span>
+                    <div class="value"><span id="total-cal">0</span> <small>kcal</small></div>
+                </div>
+
+                <h4><span class="icon"></span> Rincian Bahan</h4>
+                <ul id="breakdown-list" class="breakdown-grid"></ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
